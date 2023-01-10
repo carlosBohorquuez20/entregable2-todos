@@ -123,7 +123,7 @@ app.get("/todos", async (req, res) => {
   }
 });
 
-// GET por id
+// GET por id todo
 app.get("/todos/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -136,7 +136,7 @@ app.get("/todos/:id", async (req, res) => {
 
 
 
-//creando usuario
+//creando todo
 app.post("/todos", async (req, res) => {
   try {
     const  todos  = req.body;
@@ -148,7 +148,7 @@ app.post("/todos", async (req, res) => {
   }
 });
 
-//actualizar usuario
+//actualizar todo
 app.put("/todos/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -163,7 +163,7 @@ app.put("/todos/:id", async (req, res) => {
   }
 });
 
-//delete usuario
+//delete todo
 app.delete("/todos/:id", async (req, res) => {
   try {
     const { id } = req.params;
